@@ -51,10 +51,10 @@ export const WUT_INFO = {
   email_compliance: 'compliance@worldacademytheology.us',
 
   // URLs y redes sociales
-  website: 'https://academy.worlduniversitytheology.com',
-  url: 'https://academy.worlduniversitytheology.com',
-  portal_members: 'https://portal.academy.worlduniversitytheology.com',
-  portal_verification: 'https://verify.academy.worlduniversitytheology.com',
+  website: 'https://worldtheologyuniversityedu.com/',
+  url: 'https://worldtheologyuniversityedu.com/',
+  portal_members: 'https://portal.worldtheologyuniversityedu.com',
+  portal_verification: 'https://verify.worldtheologyuniversityedu.com',
 
   whatsapp:
     'https://wa.me/13475459684?text=Deseo%20información%20sobre%20World%20Academy%20Theology',
@@ -116,9 +116,8 @@ export const WUT_INFO = {
       'diálogo intercultural',
       'educación inclusiva',
     ],
-    og_image:
-      'https://academy.worlduniversitytheology.com/assets/webp/logo_wat.png',
-    favicon: 'https://academy.worlduniversitytheology.com/favicon.ico',
+    og_image: 'https://worldtheologyuniversityedu.com/assets/webp/logo_wat.png',
+    favicon: 'https://worldtheologyuniversityedu.com/favicon.ico',
   },
 
   // APIs y servicios externos

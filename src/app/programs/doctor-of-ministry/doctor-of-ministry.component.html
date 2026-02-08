@@ -1,0 +1,34 @@
+<app-banner class="fadeIn" [banner]="flyer" [alt]="alt" />
+
+<main class="pages">
+  <div class="content fadeIn">
+    <app-breadcams />
+
+    <h2>Programa de Doctorado en Ministerio (DMin)</h2>
+    <div class="line"></div>
+
+    <p>
+      El Doctorado en Ministerio (DMin) es un título doctoral profesional
+      diseñado para enriquecer a líderes religiosos en entornos tradicionales y
+      no tradicionales, para profundizar su comprensión y compromiso con el
+      ministerio, y para perfeccionar su práctica. El enfoque del DMin de la
+      Universidad World es el Liderazgo Transformacional, y cualquier persona
+      puede convertirse en un líder transformacional. Primero necesitas el deseo
+      de desarrollar nuevas habilidades y explorar nuevas ideas, comprender tu
+      comunidad y conocer sus fortalezas y necesidades, y estar dispuesto a ver
+      posibilidades de cambio transformador.
+    </p>
+
+    <p>
+      El programa DMin es un programa de grado de tres años de baja residencia
+      que combina el aprendizaje en línea con clases intensivas en línea, y te
+      permite diseñar el programa que necesitarás para tu práctica ministerial.
+    </p>
+
+    <app-accordion [accordionsData]="coursesData" />
+
+    <h2>Preguntas frecuentes</h2>
+    <div class="line"></div>
+    <app-accordion [accordionsData]="faqsData" />
+  </div>
+</main>

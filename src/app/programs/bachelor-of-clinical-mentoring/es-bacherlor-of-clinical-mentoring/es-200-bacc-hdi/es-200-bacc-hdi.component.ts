@@ -1,0 +1,25 @@
+import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
+import { GlobalsInjects } from '@shared/modules/globals-injects';
+
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { dialogImports } from '@shared/modules/dialog-imports';
+
+@Component({
+  selector: 'app-es-200-bacc-hdi',
+  imports: [dialogImports],
+  templateUrl: './es-200-bacc-hdi.component.html',
+  styles: ``,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class Es200BaccHdiComponent extends GlobalsInjects {
+  public flyer =
+    './assets/webp/ba-degree-in-clinical-counseling/desarrollo-humano-i-es.webp';
+  public alt = 'Flyer World Theology University';
+
+  constructor(
+    private dialogRef: MatDialogRef<Es200BaccHdiComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any,
+  ) {
+    super();
+  }
+}
