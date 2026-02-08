@@ -1,8 +1,78 @@
 [
   {
     "id": 1,
+    "title": "Licenciatura en Concejería clínica",
+    "path": "/programs/bachelor-of-clinical-mentoring",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 2,
+    "title": "Licenciatura en comunicación",
+    "path": "/programs/bachelor-of-communication",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 5,
     "title": "Licenciatura en Teología",
-    "path": "/programs/bachelor-theology",
+    "path": "/programs/bacher-teology",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 6,
+    "title": "Licenciatura en Capellanía",
+    "path": "/programs/capellania",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 7,
+    "title": "Maestría en Teología",
+    "path": "/programs/master-of-theology",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 8,
+    "title": "Maestría en Divinidades",
+    "path": "/programs/master-of-divinity",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 9,
+    "title": "Maestría en Concejería clínica",
+    "path": "/programs/master-of-clinical-mentoring",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 12,
+    "title": "Maestría en salud mental",
+    "path": "/programs/master-of-mental-health",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 13,
+    "title": "Doctorado en Divinidades",
+    "path": "/programs/doctor-of-divinity",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 14,
+    "title": "Doctorado en Filosofía Bíblica",
+    "path": "/programs/doctorado-en-filosofia-biblica",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 15,
+    "title": "Licenciatura en Enfermería",
+    "path": "/programs/bachelor-of-nursing",
     "url": "",
     "navigate": false
   }

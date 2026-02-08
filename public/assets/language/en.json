@@ -1,8 +1,78 @@
 [
   {
     "id": 1,
-    "title": "Bachelor of Theology",
-    "path": "/programs/bachelor-theology",
+    "title": "Bachelor in Clinical Mentoring",
+    "path": "/programs/bachelor-of-clinical-mentoring",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 2,
+    "title": "Bachelor in Communication",
+    "path": "/programs/bachelor-of-communication",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 5,
+    "title": "Bachelor in Theology",
+    "path": "/programs/bacher-teology",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 6,
+    "title": "Bachelor in Chaplaincy",
+    "path": "/programs/capellania",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 7,
+    "title": "Master in Theology",
+    "path": "/programs/master-of-theology",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 8,
+    "title": "Master in Divinity",
+    "path": "/programs/master-of-divinity",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 9,
+    "title": "Master in Clinical Mentoring",
+    "path": "/programs/master-of-clinical-mentoring",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 12,
+    "title": "Master in Mental Health",
+    "path": "/programs/master-of-mental-health",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 13,
+    "title": "Doctorate in Divinity",
+    "path": "/programs/doctor-of-divinity",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 14,
+    "title": "Doctorate in Biblical Philosophy",
+    "path": "/programs/doctorado-en-filosofia-biblica",
+    "url": "",
+    "navigate": false
+  },
+  {
+    "id": 15,
+    "title": "Bachelor in Nursing",
+    "path": "/programs/bachelor-of-nursing",
     "url": "",
     "navigate": false
   }
