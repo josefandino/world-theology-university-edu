@@ -7,4 +7,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class EnAlliedHealthInstructorComponent {}
+export class EnAlliedHealthInstructorComponent {
+  public banner = '';
+}
