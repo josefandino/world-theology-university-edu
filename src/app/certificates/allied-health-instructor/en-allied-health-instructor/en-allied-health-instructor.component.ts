@@ -8,5 +8,5 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EnAlliedHealthInstructorComponent {
-  public banner = '';
+  public banner = 'public/assets/certificates/allied-health-instructor-en.webp';
 }
