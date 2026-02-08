@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "Phlebotomy Technician",
+    "description": "Phlebotomy technicians primarily draw blood for laboratory testing, as well as for...",
+    "path": "/certificates/phlebotomy-technician"
+  },
+  {
+    "id": 2,
+    "title": "EKG Technician",
+    "description": "An EKG Technician is a member of the health care team whose primary duty is th...",
+    "path": "/certificates/ekg-technician"
+  },
+  {
+    "id": 3,
+    "title": "Patient Care Technician",
+    "description": "A Patient Care Technician is a health technician working under the supervision...",
+    "path": "/certificates/patient-care-technician"
+  },
+  {
+    "id": 4,
+    "title": "Clinical & Administrative Medical Assistant",
+    "description": "A Medical Assistant is a person who, under the direction of a physician, performs...",
+    "path": "/certificates/clinical-administrative-medical-assistant"
+  },
+  {
+    "id": 5,
+    "title": "Medical Administrative Assistant",
+    "description": "This profession requires the individual to help manage a medical office. The medical...",
+    "path": "/certificates/medical-administrative-assistant"
+  },
+  {
+    "id": 6,
+    "title": "Medical Laboratory Assistant",
+    "description": "A Medical Laboratory Assistant is a person who, under the supervision of a medical...",
+    "path": "/certificates/medical-laboratory-assistant"
+  },
+  {
+    "id": 7,
+    "title": "Medical Billing & Coding",
+    "description": "This profession requires the individual to manage insurance claims, patient's billing...",
+    "path": "/certificates/medical-billing-coding"
+  },
+  {
+    "id": 8,
+    "title": "Pharmacy Technician",
+    "description": "A Pharmacy technician is a pharmacy staff member who works under the direct...",
+    "path": "/certificates/pharmacy-technician"
+  },
+  {
+    "id": 9,
+    "title": "Veterinary Assistant",
+    "description": "A veterinary assistant is someone who works under the direction of a veterinarian...",
+    "path": "/certificates/veterinary-assistant"
+  },
+  {
+    "id": 10,
+    "title": "Insurance Exam Technician",
+    "description": "An Insurance Examination Technician performs duties such as drawing blood for...",
+    "path": "/certificates/insurance-exam-technician"
+  },
+  {
+    "id": 11,
+    "title": "Medical Scribe",
+    "description": "The primary duty of a scribe is to record the clinical, family and social history of the...",
+    "path": "/certificates/medical-scribe"
+  },
+  {
+    "id": 12,
+    "title": "Electronic Health Records Specialist",
+    "description": "An Electronic Health Records Specialist provides support to the rest of the team in...",
+    "path": "/certificates/electronic-health-records-specialist"
+  },
+  {
+    "id": 13,
+    "title": "Allied Health Instructor",
+    "description": "Becoming certified as an Allied Health Instructor will establish you as a master of...",
+    "path": "/certificates/allied-health-instructor"
+  }
+]

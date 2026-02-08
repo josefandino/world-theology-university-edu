@@ -1,0 +1,111 @@
+<!-- <div class="slider">
+  <div class="childSlider" #slider>
+    @for (slide of sliderList; track slide.id) {
+      <div class="slide">
+        <img [src]="slide.img" [alt]="slide.alt" />
+      </div>
+    } -->
+<!-- Se duplica el primer slide para efecto infinito -->
+<!-- <div class="slide">
+      <img [src]="sliderList[0].img" [alt]="sliderList[0].alt" />
+    </div>
+  </div>
+</div> -->
+
+<div class="banner_video">
+  <div class="overlay">
+    <div class="content_overlay">
+      <h1>{{ wtuInfo.title }}</h1>
+      <p>{{ wtuInfo.tagline_es }}</p>
+      <div class="mt-1">
+        <app-whatsapp [module]="''" />
+      </div>
+    </div>
+  </div>
+  <div class="video">
+    <video
+      [src]="video"
+      autoplay
+      [muted]="true"
+      playsinline
+      loop
+      controlsList="nodownload noplaybackrate noremoteplayback"
+      disablePictureInPicture
+      preload="metadata"
+    ></video>
+  </div>
+</div>
+
+<div class="cinta">
+  <span>{{ wtuInfo.title }}</span>
+</div>
+
+<main class="pages">
+  <div class="content fadeIn">
+    <!-- Cards images -->
+    <div class="card_images">
+      @for (card of cardImages; track card.id) {
+        <div class="card_image">
+          <div class="overlay_image"></div>
+          <img [src]="card.img" [alt]="card.alt" />
+          <!-- <div class="content_image">
+            <p>{{ card.title }}</p>
+          </div> -->
+        </div>
+      }
+    </div>
+
+    <div class="why_wtu">
+      <div class="why_wtu_text">
+        <h2>¿Por qué {{ wtuInfo.title }}?</h2>
+        <p>
+          {{ wtuInfo.title }} es una institución global dedicada a proporcionar
+          educación teológica de alta calidad a estudiantes de todo el mundo.
+          Con un enfoque en la excelencia académica, el crecimiento espiritual y
+          la aplicación práctica, preparamos a los estudiantes para convertirse
+          en líderes efectivos en sus comunidades y ministerios.
+        </p>
+      </div>
+
+      <div class="why_wtu_img">
+        <img [src]="whyWtuImg" [alt]="wtuInfo.title" />
+      </div>
+    </div>
+
+    <!-- <p class="pItalic">
+      <i>{{ academyInfo.description_es }}</i>
+    </p>
+    <p>
+      Nuestro objetivo es formar líderes espirituales y académicos capaces de
+      transformar su entorno, unir culturas y tender puentes de diálogo en un
+      escenario global.
+    </p>
+
+    <p>
+      Aquí encontrarás una comunidad abierta, y apasionada, donde el pensamiento
+      crítico, la espiritualidad y la excelencia académica se entrelazan para
+      inspirar un aprendizaje profundo y transformador.
+    </p>
+
+    <p>
+      Con una modalidad 100% online, te acompañamos a descubrir nuevas
+      perspectivas, fortalecer tu vocación y desarrollar las habilidades
+      necesarias para impactar positivamente en tu vida y en la de los demás.
+    </p>
+
+    <p>
+      World Academy Theology: aprende, crece y transforma el mundo con tu fe y
+      conocimiento.
+    </p>
+
+    <div class="btnValid mt-2" routerLink="/courses">Únete</div>
+
+    <div class="cinta mt-2">
+      <span>Preguntas Frecuentes (FAQs)</span>
+    </div>
+
+    <div class="mt-1">
+      <app-accordion [accordionsData]="preguntasFrecuentesData" />
+    </div> -->
+  </div>
+</main>

@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "Técnico Certificado en Flebotomía",
+    "description": "Los técnicos en flebotomía extraen sangre principalmente para pruebas de laboratorio, así como para...",
+    "path": "/certificates/phlebotomy-technician"
+  },
+  {
+    "id": 2,
+    "title": "Técnico Certificado en EKG",
+    "description": "Un Técnico en EKG es miembro del equipo de atención médica cuya función principal es...",
+    "path": "/certificates/ekg-technician"
+  },
+  {
+    "id": 3,
+    "title": "Técnico Certificado en Atención al Paciente",
+    "description": "Un Técnico de Atención al Paciente es un técnico de salud que trabaja bajo la supervisión...",
+    "path": "/certificates/patient-care-technician"
+  },
+  {
+    "id": 4,
+    "title": "Asistente Médico Clínico y Administrativo Certificado",
+    "description": "Un Asistente Médico es una persona que, bajo la dirección de un médico, realiza...",
+    "path": "/certificates/clinical-administrative-medical-assistant"
+  },
+  {
+    "id": 5,
+    "title": "Asistente Administrativo Médico Certificado",
+    "description": "Esta profesión requiere que la persona ayude a administrar un consultorio médico. El asistente médico...",
+    "path": "/certificates/medical-administrative-assistant"
+  },
+  {
+    "id": 6,
+    "title": "Asistente de Laboratorio Médico Certificado",
+    "description": "Un Asistente de Laboratorio Médico es una persona que, bajo la supervisión de un médico...",
+    "path": "/certificates/medical-laboratory-assistant"
+  },
+  {
+    "id": 7,
+    "title": "Facturación y Codificación Médica Certificada",
+    "description": "Esta profesión requiere que la persona gestione reclamaciones de seguros, la facturación del paciente...",
+    "path": "/certificates/medical-billing-coding"
+  },
+  {
+    "id": 8,
+    "title": "Técnico de Farmacia Certificado",
+    "description": "Un técnico de farmacia es un miembro del personal que trabaja bajo la supervisión directa...",
+    "path": "/certificates/pharmacy-technician"
+  },
+  {
+    "id": 9,
+    "title": "Asistente Veterinario Certificado",
+    "description": "Un asistente veterinario es alguien que trabaja bajo la dirección de un veterinario...",
+    "path": "/certificates/veterinary-assistant"
+  },
+  {
+    "id": 10,
+    "title": "Técnico Certificado en Examen de Seguros",
+    "description": "Un Técnico en Examen de Seguros realiza tareas como extraer sangre para...",
+    "path": "/certificates/insurance-exam-technician"
+  },
+  {
+    "id": 11,
+    "title": "Escriba Médico",
+    "description": "La función principal de un escriba es registrar la historia clínica, familiar y social del...",
+    "path": "/certificates/medical-scribe"
+  },
+  {
+    "id": 12,
+    "title": "Especialista en Registros Electrónicos de Salud",
+    "description": "Un Especialista en Registros Electrónicos de Salud brinda apoyo al resto del equipo en...",
+    "path": "/certificates/electronic-health-records-specialist"
+  },
+  {
+    "id": 13,
+    "title": "Instructor de Salud Aliada",
+    "description": "Convertirse en Instructor de Salud Aliada lo establecerá como un maestro de...",
+    "path": "/certificates/allied-health-instructor"
+  }
+]

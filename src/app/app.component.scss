@@ -1,0 +1,61 @@
+// .navigation {
+//   width: 100%;
+//   background: #fff;
+//   position: fixed;
+//   top: 0;
+//   z-index: 998;
+// }
+
+// .childNavigation {
+//   position: sticky;
+//   top: 0;
+//   z-index: 999;
+//   background: inherit;
+// }
+
+.loader {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background: rgba(36, 35, 42, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    object-fit: cover;
+  }
+}
+
+.goBackTop {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  background: var(--primary);
+  color: #fefefe;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1) translateY(-3px);
+  }
+
+  &:active {
+    transform: scale(0.8) translateY(3px);
+  }
+}
+
+.goBackTop img {
+  filter: invert(100%);
+}

@@ -1,0 +1,85 @@
+@if (language() === 'en') {
+  <app-banner class="fadeIn" [banner]="flyerEn" [alt]="alt" />
+  <main class="pages">
+    <div class="content fadeIn">
+      <div class="listPrograms">
+        @for (item of listProgramsEn(); track $index) {
+          @if (item.path) {
+            <a [routerLink]="item.path">
+              <h3>{{ item.title }}</h3>
+            </a>
+          } @else {
+            <a [href]="item.url" target="_blank" rel="noopener noreferrer">
+              <h3>{{ item.title }}</h3>
+            </a>
+          }
+        }
+      </div>
+
+      <p>
+        {{ academyInfo.title }} is an educational institution in the United
+        States that offers Divinity degree programs across four levels, along
+        with a joint program with its School of Divinity. Virtual and in-person
+        options are designed for different callings and stages of formation.
+      </p>
+
+      <p>
+        The programs combine academic study, spiritual formation, and practical
+        application for those seeking to deepen their understanding of theology,
+        ministerial leadership, fieldwork, or religious service. Flexible
+        classes let you progress from anywhere and fit your schedule.
+      </p>
+
+      <p>
+        You will learn with committed faculty and mentors in a close,
+        collaborative community focused on your personal and professional
+        growth, and on reflecting on faith’s most enduring questions.
+      </p>
+    </div>
+  </main>
+} @else {
+  <app-banner class="fadeIn" [banner]="flyerEs" [alt]="alt" />
+
+  <main class="pages">
+    <div class="content fadeIn">
+      <div class="listPrograms">
+        @for (item of listProgramsEs(); track $index) {
+          @if (item.path) {
+            <a [routerLink]="item.path">
+              <h3>{{ item.title }}</h3>
+            </a>
+          } @else {
+            <a [href]="item.url" target="_blank" rel="noopener noreferrer">
+              <h3>{{ item.title }}</h3>
+            </a>
+          }
+        }
+      </div>
+
+      <p>
+        World Academy Theology es una institución educativa en Estados Unidos
+        que ofrece programas de grado en Divinidad en cuatro niveles, además de
+        un programa conjunto con su Escuela de Divinidad. Las opciones virtuales
+        y presenciales están pensadas para distintas vocaciones y etapas de
+        formación.
+      </p>
+
+      <p>
+        Los programas combinan estudio académico, formación espiritual y
+        aplicación práctica para quienes buscan profundizar en teología,
+        liderazgo ministerial, trabajo de campo o servicio religioso. La
+        flexibilidad de las clases te permite avanzar desde cualquier lugar y
+        adaptarte a tus horarios.
+      </p>
+
+      <p>
+        Aprenderás con docentes y mentores comprometidos en una comunidad
+        cercana y colaborativa, enfocada en tu crecimiento personal y
+        profesional y en la reflexión sobre las grandes preguntas de la fe y la
+        vida.
+      </p>
+
+      <app-table-weks />
+    </div>
+  </main>
+}

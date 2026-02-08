@@ -1,0 +1,46 @@
+import { Component, inject, signal } from '@angular/core';
+
+import { Subject, takeUntil } from 'rxjs';
+
+import { UnsubscribeSubject } from '@shared/models/global.interface';
+import { AngularModule } from '@shared/modules';
+import { LanguageService } from '@shared/services/language.service';
+import { WUT_INFO } from '@shared/const/info-acc';
+
+@Component({
+  selector: 'app-footer',
+  imports: [AngularModule],
+  templateUrl: './footer.component.html',
+  styleUrl: './footer.component.scss',
+})
+export class FooterComponent {
+  year = new Date().getFullYear();
+
+  public language = signal<string>('en');
+
+  readonly academyInfo = WUT_INFO;
+  private readonly _languageSvc = inject(LanguageService);
+
+  protected readonly unsubscribeAll: UnsubscribeSubject = new Subject<void>();
+
+  constructor() {
+    this.language.set(this._languageSvc.getLanguage());
+  }
+
+  ngOnInit() {
+    this.listenerLanguage();
+  }
+
+  private listenerLanguage(): void {
+    this._languageSvc.language$
+      .pipe(takeUntil(this.unsubscribeAll))
+      .subscribe((langue: string) => {
+        this.language.set(langue);
+      });
+  }
+
+  ngOnDestroy(): void {
+    this.unsubscribeAll.next();
+    this.unsubscribeAll.complete();
+  }
+}

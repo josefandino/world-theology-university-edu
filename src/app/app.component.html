@@ -1,0 +1,14 @@
+@defer {
+  <app-nav />
+
+  <router-outlet />
+  <br />
+  <br />
+  <br />
+
+  <app-footer />
+} @loading (after 100ms; minimum 1s) {
+  <div class="loader">
+    <img alt="loading..." src="../assets/gif/spinner.gif" />
+  </div>
+}

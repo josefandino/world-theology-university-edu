@@ -1,0 +1,97 @@
+@if (language() === 'en') {
+  <!-- <app-banner class="fadeIn" [banner]="flyerEn" [alt]="alt" />  -->
+  <main class="pages">
+    <div class="content fadeIn">
+      <h2>Certificates available</h2>
+      <div class="line"></div>
+      <p>
+        The exam prices include registration, certification, shipping, and
+        handling.
+        <br />
+        If a candidate fails an exam and wishes to retake it, they must pay the
+        exam fee for each attempt.
+      </p>
+
+      <div class="listPrograms">
+        @for (item of listCertificatesEn(); track $index) {
+          @if (item.path) {
+            <a [routerLink]="item.path">
+              <h3>{{ item.title }}</h3>
+              <span>{{ item.description }}</span>
+            </a>
+          } @else {
+            <a [href]="item.path" target="_blank" rel="noopener noreferrer">
+              <h3>{{ item.title }}</h3>
+              <span>{{ item.description }}</span>
+            </a>
+          }
+        }
+      </div>
+
+      <p>
+        Advance your career with industry-relevant certifications built for
+        highly skilled professionals across the United States. Each credential
+        is designed to showcase your expertise and help you stand out in
+        competitive healthcare and administrative roles.
+      </p>
+
+      <p>
+        Choose a track that aligns with your goals, prepare with confidence, and
+        earn a credential that signals readiness to employers nationwide.
+      </p>
+
+      <p>
+        Ready to move forward? Explore the certificates below and take the next
+        step toward your professional edge.
+      </p>
+    </div>
+  </main>
+} @else {
+  <!-- <app-banner class="fadeIn" [banner]="flyerEs" [alt]="alt" /> -->
+  <main class="pages">
+    <div class="content fadeIn">
+      <h2>Certificados disponibles</h2>
+      <div class="line"></div>
+      <p>
+        Los precios de examen incluyen inscripción, certificación, envío y
+        manejo. <br />
+        Si un candidato no aprueba un examen y desea repetirlo, deberá pagar la
+        tarifa del examen por cada intento.
+      </p>
+
+      <div class="listPrograms">
+        @for (item of listCertificatesEs(); track $index) {
+          @if (item.path) {
+            <a [routerLink]="item.path">
+              <h3>{{ item.title }}</h3>
+            </a>
+          } @else {
+            <a [href]="item.path" target="_blank" rel="noopener noreferrer">
+              <h3>{{ item.title }}</h3>
+            </a>
+          }
+        }
+      </div>
+
+      <p>
+        Impulsa tu carrera con certificaciones relevantes para el mercado,
+        diseñadas para profesionales altamente capacitados en Estados Unidos.
+        Cada credencial está pensada para destacar tu experiencia y ayudarte a
+        sobresalir en roles competitivos de salud y administración.
+      </p>
+
+      <p>
+        Elige la ruta que se alinea con tus metas, prepárate con confianza y
+        obtén una credencial que demuestre tu preparación ante empleadores en
+        todo el país.
+      </p>
+
+      <p>
+        ¿Listo para avanzar? Explora los certificados disponibles y da el
+        siguiente paso hacia tu ventaja profesional.
+      </p>
+
+      <app-table-weks />
+    </div>
+  </main>
+}

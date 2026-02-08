@@ -1,0 +1,23 @@
+<footer>
+  @if (language() === 'es') {
+    <div class="copyrigth">
+      <!-- <p>Phone: {{ academyInfo.phone }}</p> -->
+
+      <p>{{ academyInfo.address }}</p>
+      <p>{{ academyInfo.address_secondary }}</p>
+      <p class="text-center">
+        © All rights reserved 2024 - {{ year }}, {{ academyInfo.title }}
+      </p>
+    </div>
+  } @else {
+    <div class="copyrigth">
+      <!-- <p>Phone: {{ academyInfo.phone }}</p> -->
+
+      <p>{{ academyInfo.address }}</p>
+      <p>{{ academyInfo.address_secondary }}</p>
+      <p class="text-center">
+        © All rights reserved 2024 - {{ year }}, {{ academyInfo.title }}
+      </p>
+    </div>
+  }
+</footer>
