@@ -20,6 +20,11 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'catalogs',
+    loadChildren: () =>
+      import('./catalogs/catalogs.routing').then((r) => r.catalogsRouting),
+  },
+  {
     path: 'courses',
     loadChildren: () =>
       import('./cuorses/cuorses.routing').then((r) => r.coursesRoutes),

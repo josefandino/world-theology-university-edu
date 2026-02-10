@@ -40,6 +40,11 @@ export class NavComponent {
       navigate: true,
     },
     {
+      name: 'Catalogs',
+      path: '/catalogs',
+      navigate: true,
+    },
+    {
       name: 'Programs',
       path: '/programs',
       navigate: true,
@@ -65,6 +70,11 @@ export class NavComponent {
     {
       name: 'Nosotros',
       path: '/about',
+      navigate: true,
+    },
+    {
+      name: 'Catálogos',
+      path: '/catalogs',
       navigate: true,
     },
     {
