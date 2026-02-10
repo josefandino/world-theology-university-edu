@@ -11,5 +11,5 @@ import { WTU_INFO } from '@shared/const/info-acc';
 export default class EnAboutComponent {
   public banner = './assets/webp/about/about.webp';
 
-  readonly academyInfo = WTU_INFO;
+  readonly wtuInfo = WTU_INFO;
 }
