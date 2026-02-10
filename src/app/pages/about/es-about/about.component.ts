@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { BannerComponent } from '@shared/components/banner/banner.component';
-import { WUT_INFO } from '@shared/const/info-acc';
+import { WTU_INFO } from '@shared/const/info-acc';
 
 @Component({
   selector: 'app-es-about',
@@ -12,5 +12,5 @@ import { WUT_INFO } from '@shared/const/info-acc';
 export default class EsAboutComponent {
   public banner = './assets/webp/about/about.webp';
 
-  readonly academyInfo = WUT_INFO;
+  readonly wtuInfo = WTU_INFO;
 }

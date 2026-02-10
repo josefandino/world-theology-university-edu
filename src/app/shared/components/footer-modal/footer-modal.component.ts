@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
-import { WUT_INFO } from '@shared/const/info-acc';
+import { WTU_INFO } from '@shared/const/info-acc';
 
 @Component({
   selector: 'app-footer-modal',
@@ -12,7 +12,7 @@ import { WUT_INFO } from '@shared/const/info-acc';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FooterModalComponent {
-  public whatsapp = WUT_INFO.whatsapp;
+  public whatsapp = WTU_INFO.whatsapp;
 
   isEnglish = input<boolean>(false);
 }

@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { AngularModule, MaterialModule } from '@shared/modules';
 
 import { EnCourseBacherOfTheologyComponent } from './en-course-bacher-of-theology/en-course-bacher-of-theology.component';
-import { WUT_INFO } from '@shared/const/info-acc';
+import { WTU_INFO } from '@shared/const/info-acc';
 
 @Component({
   selector: 'app-en-bacher-of-teology',
@@ -17,7 +17,7 @@ export class EnBacherOfTeologyComponent {
 
   title = signal<string>('');
 
-  readonly academyInfo = WUT_INFO;
+  readonly academyInfo = WTU_INFO;
 
   ngOnInit() {
     this.title.set(this.academyInfo.title);

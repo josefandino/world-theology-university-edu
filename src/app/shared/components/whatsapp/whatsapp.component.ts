@@ -11,7 +11,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
-import { WUT_INFO } from '@shared/const/info-acc';
+import { WTU_INFO } from '@shared/const/info-acc';
 import { LanguageService } from '@shared/services/language.service';
 
 @Component({
@@ -38,7 +38,7 @@ export class WhatsappComponent {
   /// ej: 'en' | 'es' (lo que uses tú)
   public language = signal<string>('en');
 
-  private readonly phoneOrBase = WUT_INFO.whatsapp;
+  private readonly phoneOrBase = WTU_INFO.whatsapp;
 
   constructor() {
     /// valor inicial

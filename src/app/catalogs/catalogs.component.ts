@@ -6,30 +6,30 @@ import {
   signal,
   ViewChild,
 } from '@angular/core';
-
-import { AngularModule, MaterialModule } from '@shared/modules';
-import { ProgramsI } from './programs.interface';
+import { CatalogsI } from './catalogs.interface';
 import { CdkAccordionItem } from '@angular/cdk/accordion';
-import { ProgramsService } from './programs.service';
+import { CatalogsService } from './catalogs.service';
 import { LanguageService } from '@shared/services/language.service';
 import { UnsubscribeSubject } from '@shared/models/global.interface';
 import { Subject, takeUntil } from 'rxjs';
-import { TextService } from '@shared/helpers';
 import { WTU_INFO } from '@shared/const/info-acc';
-import { TableWeksComponent } from '@shared/components/table-weks/table-weks.component';
-import { BannerComponent } from '@shared/components/banner/banner.component';
+import { EnCatalogsComponent } from './en-catalogs/en-catalogs.component';
+import { EsCatalogsComponent } from './es-catalogs/es-catalogs.component';
 
 @Component({
-  selector: 'app-programs',
-  templateUrl: './programs.component.html',
-  styleUrl: './programs.component.scss',
-  imports: [AngularModule, MaterialModule, TableWeksComponent, BannerComponent],
-
+  selector: 'app-catalogs',
+  imports: [EnCatalogsComponent, EsCatalogsComponent],
+  template: ` @if (language() === 'en') {
+      <app-en-catalogs />
+    } @else {
+      <app-es-catalogs />
+    }`,
+  styleUrl: './catalogs.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class ProgramsComponent implements OnInit {
-  public listProgramsEs = signal<ProgramsI[]>([]);
-  public listProgramsEn = signal<ProgramsI[]>([]);
+export class CatalogsComponent implements OnInit {
+  public listCertificatesEs = signal<CatalogsI[]>([]);
+  public listCertificatesEn = signal<CatalogsI[]>([]);
 
   listLetters: unknown[] = [];
 
@@ -40,7 +40,7 @@ export default class ProgramsComponent implements OnInit {
   numberCard = signal<number>(1);
   @ViewChild('accordionItemA') accordionItemA: CdkAccordionItem | undefined;
 
-  private readonly _programsSvc = inject(ProgramsService);
+  private readonly _certificatesSvc = inject(CatalogsService);
 
   toggleAccordion(index: number): void {
     this.expanded = this.expanded === index ? null : index;
@@ -50,11 +50,8 @@ export default class ProgramsComponent implements OnInit {
     this.numberCard.set(index);
   }
 
-  public flyerEn = './assets/webp/wat_programs.webp';
-  public flyerEs = './assets/webp/wat_programs.webp';
-  alt = 'Flyer World Theology Academy';
-
-  title: string = '';
+  // public flyerEn = './assets/webp/wat_programs.webp';
+  // public flyerEs = './assets/webp/wat_programs.webp';
 
   public language = signal<string>('en');
 
@@ -64,14 +61,11 @@ export default class ProgramsComponent implements OnInit {
 
   protected readonly unsubscribeAll: UnsubscribeSubject = new Subject<void>();
 
-  private readonly _text = inject(TextService);
-
   constructor() {
     this.language.set(this._languageSvc.getLanguage());
   }
 
   ngOnInit() {
-    this.title = this.academyInfo.title;
     this.listenerLanguage();
   }
 
@@ -80,19 +74,7 @@ export default class ProgramsComponent implements OnInit {
       .pipe(takeUntil(this.unsubscribeAll))
       .subscribe((langue: string) => {
         this.language.set(langue);
-        this.getPrograms();
       });
-  }
-
-  private getPrograms(): void {
-    this._programsSvc.esLanguage().subscribe((resp: ProgramsI[]) => {
-      console.log(resp);
-      this.listProgramsEs.set(resp);
-    });
-    this._programsSvc.enLanguage().subscribe((resp: ProgramsI[]) => {
-      console.log(resp);
-      this.listProgramsEn.set(resp);
-    });
   }
 
   ngOnDestroy(): void {

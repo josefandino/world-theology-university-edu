@@ -14,7 +14,7 @@ import { UnsubscribeSubject } from '@shared/models/global.interface';
 import { TableWeksComponent } from '@shared/components/table-weks/table-weks.component';
 import { AngularModule } from '@shared/modules/angular.module';
 import { MaterialModule } from '@shared/modules/material.module';
-import { WUT_INFO } from '@shared/const/info-acc';
+import { WTU_INFO } from '@shared/const/info-acc';
 import { LanguageService } from '@shared/services/language.service';
 
 import { CertificatesService } from './certificates.service';
@@ -58,7 +58,7 @@ export default class CertificatesComponent implements OnInit {
 
   public language = signal<string>('en');
 
-  readonly academyInfo = WUT_INFO;
+  readonly academyInfo = WTU_INFO;
 
   private readonly _languageSvc = inject(LanguageService);
 
