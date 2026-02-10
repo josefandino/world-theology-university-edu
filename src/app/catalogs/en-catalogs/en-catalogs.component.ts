@@ -4,9 +4,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'app-en-catalogs',
   imports: [],
   templateUrl: './en-catalogs.component.html',
-  styles: ``,
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrl: '../catalogs.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class EnCatalogsComponent {
-
-}
+export class EnCatalogsComponent {}

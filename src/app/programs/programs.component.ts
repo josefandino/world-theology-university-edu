@@ -15,7 +15,7 @@ import { LanguageService } from '@shared/services/language.service';
 import { UnsubscribeSubject } from '@shared/models/global.interface';
 import { Subject, takeUntil } from 'rxjs';
 import { TextService } from '@shared/helpers';
-import { WUT_INFO } from '@shared/const/info-acc';
+import { WTU_INFO } from '@shared/const/info-acc';
 import { TableWeksComponent } from '@shared/components/table-weks/table-weks.component';
 import { BannerComponent } from '@shared/components/banner/banner.component';
 
@@ -58,7 +58,7 @@ export default class ProgramsComponent implements OnInit {
 
   public language = signal<string>('en');
 
-  readonly academyInfo = WUT_INFO;
+  readonly academyInfo = WTU_INFO;
 
   private readonly _languageSvc = inject(LanguageService);
 

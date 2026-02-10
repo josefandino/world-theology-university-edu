@@ -5,7 +5,7 @@ import { Subject, takeUntil } from 'rxjs';
 import { UnsubscribeSubject } from '@shared/models/global.interface';
 import { AngularModule } from '@shared/modules';
 import { LanguageService } from '@shared/services/language.service';
-import { WUT_INFO } from '@shared/const/info-acc';
+import { WTU_INFO } from '@shared/const/info-acc';
 
 @Component({
   selector: 'app-footer',
@@ -18,7 +18,7 @@ export class FooterComponent {
 
   public language = signal<string>('en');
 
-  readonly academyInfo = WUT_INFO;
+  readonly academyInfo = WTU_INFO;
   private readonly _languageSvc = inject(LanguageService);
 
   protected readonly unsubscribeAll: UnsubscribeSubject = new Subject<void>();

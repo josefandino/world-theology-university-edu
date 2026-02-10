@@ -6,7 +6,7 @@ import {
   signal,
 } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { WUT_INFO } from '@shared/const/info-acc';
+import { WTU_INFO } from '@shared/const/info-acc';
 import { AngularModule, MaterialModule } from '@shared/modules';
 import { LanguageService } from '@shared/services/language.service';
 
@@ -19,7 +19,7 @@ import { LanguageService } from '@shared/services/language.service';
 })
 export class LanguageComponent {
   public language = signal<string>('en');
-  public academyInfo = WUT_INFO;
+  public academyInfo = WTU_INFO;
 
   private readonly _languageSvc = inject(LanguageService);
 

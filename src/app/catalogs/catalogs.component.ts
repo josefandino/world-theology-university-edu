@@ -12,7 +12,7 @@ import { CatalogsService } from './catalogs.service';
 import { LanguageService } from '@shared/services/language.service';
 import { UnsubscribeSubject } from '@shared/models/global.interface';
 import { Subject, takeUntil } from 'rxjs';
-import { WUT_INFO } from '@shared/const/info-acc';
+import { WTU_INFO } from '@shared/const/info-acc';
 import { EnCatalogsComponent } from './en-catalogs/en-catalogs.component';
 import { EsCatalogsComponent } from './es-catalogs/es-catalogs.component';
 
@@ -55,7 +55,7 @@ export class CatalogsComponent implements OnInit {
 
   public language = signal<string>('en');
 
-  readonly academyInfo = WUT_INFO;
+  readonly academyInfo = WTU_INFO;
 
   private readonly _languageSvc = inject(LanguageService);
 

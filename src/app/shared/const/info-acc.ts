@@ -1,4 +1,4 @@
-export const WUT_INFO = {
+export const WTU_INFO = {
   // Información básica
   title: 'World Theology University',
   short_name: 'WTU',

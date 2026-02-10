@@ -12,7 +12,7 @@ import {
 import { Subscription, interval } from 'rxjs';
 
 import { AccordionItem } from '@shared/components/accordion/accordion.interface';
-import { WUT_INFO } from '@shared/const/info-acc';
+import { WTU_INFO } from '@shared/const/info-acc';
 import { AngularModule, MaterialModule } from '@shared/modules';
 
 @Component({
@@ -32,7 +32,7 @@ export class EnHomeComponent implements AfterViewInit {
   @ViewChild('slider') slider!: ElementRef<HTMLDivElement>;
   currentIndex = 0;
 
-  readonly wtuInfo = WUT_INFO;
+  readonly wtuInfo = WTU_INFO;
 
   intervalSub!: Subscription;
 
